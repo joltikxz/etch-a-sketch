@@ -54,7 +54,7 @@ createGrid(16);
 inputBtn.addEventListener('click', () => {
     let size;
     do {
-        size = +prompt('Enter the size of the grid: ');
+        size = parseInt(prompt('Enter the size of the grid: '));
     } while (size > 100);
 
     createGrid(size);
